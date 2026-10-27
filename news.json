@@ -1,6 +1,13 @@
 [
   {
     "datum": "2026-10-28",
+    "titel": "Shader, Mod-Sammlungen und Absturzhilfe",
+    "text": "Neu im Launcher: Shader mit Iris, fertige Mod-Sammlungen mit einem Klick und eine Absturzhilfe, die dir sagt, was schiefgelaufen ist. Bei Problemen kannst du unter Einstellungen einen Bericht erstellen.",
+    "link": "https://squix9-hub.github.io/neo-client-releases/",
+    "linkText": "Zur Download-Seite"
+  },
+  {
+    "datum": "2026-10-28",
     "titel": "Neue Funktionen im Launcher",
     "text": "Es gibt jetzt eine Serverliste, eine Skin-Sammlung, Capes und eine neue Download-Seite.",
     "link": "https://squix9-hub.github.io/neo-client-releases/",
