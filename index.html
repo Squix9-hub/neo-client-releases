@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neo Client – dein eigener Minecraft-Launcher</title>
+  <style>
+    :root { --lila: #6c5ce7; --dunkel: #12121c; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: white;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 80% 0%, rgba(108, 92, 231, 0.32) 0%, transparent 45%),
+        radial-gradient(circle at 10% 100%, rgba(108, 92, 231, 0.16) 0%, transparent 40%),
+        var(--dunkel);
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
+    .logo { width: 170px; height: 136px; filter: drop-shadow(0 10px 30px rgba(108, 92, 231, 0.6)); }
+    h1 { margin: 12px 0 6px; font-size: 48px; letter-spacing: 0.5px; }
+    .untertitel { color: #a9a9c6; font-size: 19px; margin: 0 0 32px; }
+    .knopf {
+      display: inline-block;
+      padding: 18px 54px;
+      border-radius: 16px;
+      font-size: 22px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, #6c5ce7, #8f82f3);
+      box-shadow: 0 10px 36px rgba(108, 92, 231, 0.5);
+      transition: transform 0.12s, box-shadow 0.15s;
+    }
+    .knopf:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(108, 92, 231, 0.65); }
+    .version { color: #9a9ab5; font-size: 14px; margin-top: 14px; min-height: 20px; }
+
+    h2 { margin: 56px 0 18px; font-size: 24px; }
+    .raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; text-align: left; }
+    .karte {
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .karte strong { display: block; font-size: 17px; margin-bottom: 6px; }
+    .karte span { color: #b9b9d0; font-size: 14px; line-height: 1.5; }
+
+    ol { text-align: left; max-width: 640px; margin: 0 auto; color: #c9c9de; line-height: 1.7; padding-left: 22px; }
+    .warnung {
+      max-width: 640px;
+      margin: 18px auto 0;
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 14px;
+      color: #d8d8ea;
+      background: rgba(245, 184, 61, 0.09);
+      border: 1px solid rgba(245, 184, 61, 0.35);
+      border-radius: 12px;
+      line-height: 1.55;
+    }
+    footer { margin-top: 56px; color: #7a7a96; font-size: 13px; }
+    footer a { color: #8f82f3; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg class="logo" viewBox="0 0 200 160" aria-label="Neo Client Logo">
+      <path d="M55 110 a35 35 0 0 1 5 -69 a45 45 0 0 1 85 10 a30 30 0 0 1 -5 59 z" fill="#6c5ce7"/>
+      <polygon points="108,95 85,130 100,130 92,155 125,115 110,115 120,95" fill="#ffd93d"/>
+    </svg>
+    <h1>Neo Client</h1>
+    <p class="untertitel">Dein eigener Minecraft-Launcher mit Mods, Skins und mehr</p>
+
+    <a class="knopf" id="download" href="https://github.com/Squix9-hub/neo-client-releases/releases/latest">Für Windows herunterladen</a>
+    <div class="version" id="version"></div>
+
+    <h2>Was der Launcher kann</h2>
+    <div class="raster">
+      <div class="karte"><strong>Fabric und Mods</strong><span>Mods direkt von Modrinth suchen, installieren, aktualisieren und ein- oder ausschalten.</span></div>
+      <div class="karte"><strong>Alle Versionen</strong><span>Minecraft in jeder Version, das passende Java holt sich der Launcher selbst.</span></div>
+      <div class="karte"><strong>Skin in 3D</strong><span>Dein Skin als drehbare Figur, mit einem Klick änderbar.</span></div>
+      <div class="karte"><strong>Server beitreten</strong><span>Server speichern, Spielerzahl sehen und direkt beitreten.</span></div>
+      <div class="karte"><strong>Ressourcenpakete</strong><span>Pakete von Modrinth oder aus eigenen Dateien hinzufügen.</span></div>
+      <div class="karte"><strong>Dein Aussehen</strong><span>Farben, Hintergrundbild und Größe frei einstellbar.</span></div>
+      <div class="karte"><strong>Screenshots</strong><span>Alle Bilder aus dem Spiel an einem Ort, zum Kopieren und Aufräumen.</span></div>
+      <div class="karte"><strong>Automatische Updates</strong><span>Neue Versionen installieren sich mit einem Klick.</span></div>
+    </div>
+
+    <h2>So installierst du ihn</h2>
+    <ol>
+      <li>Klicke oben auf <strong>Für Windows herunterladen</strong>.</li>
+      <li>Starte die heruntergeladene Datei <strong>NeoClient-Setup</strong>.</li>
+      <li>Melde dich im Launcher mit deinem Microsoft-Konto an (dort muss Minecraft Java Edition gekauft sein).</li>
+      <li>Wähle eine Version und klicke auf <strong>Spielen</strong>. Beim ersten Start lädt der Launcher alles Nötige herunter, das dauert einige Minuten.</li>
+    </ol>
+    <div class="warnung">
+      <strong>Windows-Warnung:</strong> Beim Start zeigt Windows eventuell "Der Computer wurde durch Windows geschützt".
+      Das passiert bei allen Programmen ohne kostenpflichtiges Zertifikat. Klicke auf <strong>Weitere Informationen</strong>
+      und dann auf <strong>Trotzdem ausführen</strong>. Auch dein Virenprogramm kann kurz nachfragen.
+    </div>
+
+    <footer>
+      Neo Client ist ein privates Projekt und steht in keiner Verbindung zu Mojang oder Microsoft.
+      <br><a href="https://github.com/Squix9-hub/neo-client-releases/releases">Alle Versionen ansehen</a>
+    </footer>
+  </main>
+
+  <script>
+    // Holt die neueste Version von GitHub und setzt den Download-Link
+    fetch('https://api.github.com/repos/Squix9-hub/neo-client-releases/releases/latest')
+      .then((antwort) => antwort.json())
+      .then((daten) => {
+        const datei = (daten.assets || []).find((a) => /\.exe$/i.test(a.name));
+        if (!datei) return;
+        document.getElementById('download').href = datei.browser_download_url;
+        const mb = (datei.size / 1024 / 1024).toFixed(0);
+        const datum = new Date(daten.published_at).toLocaleDateString('de-DE');
+        document.getElementById('version').textContent =
+          'Neueste Version: ' + (daten.name || daten.tag_name) + ' · ' + mb + ' MB · ' + datum;
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
