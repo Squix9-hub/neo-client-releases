@@ -1,4 +1,5 @@
 [
+  { "id": "neo-owner", "name": "Neo-Owner", "datei": "neo-owner.png", "beschreibung": "Das Owner-Cape, nur für den Besitzer.", "nurBesitzer": true },
   { "id": "neo-blitz", "name": "Neo-Blitz", "datei": "neo-blitz.png", "beschreibung": "Der Blitz vom Neo Client." },
   { "id": "neo-nacht", "name": "Neo-Nacht", "datei": "neo-nacht.png", "beschreibung": "Sternenhimmel bei Nacht." },
   { "id": "neo-gold", "name": "Neo-Gold", "datei": "neo-gold.png", "beschreibung": "Gold mit glänzender Raute." }
