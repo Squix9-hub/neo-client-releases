@@ -11,5 +11,17 @@
     "name": "Neo-Flamme",
     "datei": "neo-flamme.png",
     "beschreibung": "Eine Flamme in der Nacht."
+  },
+  {
+    "id": "neo-wolke",
+    "name": "Neo-Wolke",
+    "datei": "neo-wolke.png",
+    "beschreibung": "Die Gewitterwolke des Neo Clients."
+  },
+  {
+    "id": "neo-gras",
+    "name": "Neo-Grasblock",
+    "datei": "neo-gras.png",
+    "beschreibung": "Ein ganz einfacher Grasblock."
   }
 ]
