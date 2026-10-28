@@ -23,5 +23,17 @@
     "name": "Neo-Grasblock",
     "datei": "neo-gras.png",
     "beschreibung": "Ein ganz einfacher Grasblock."
+  },
+  {
+    "id": "neo-basti",
+    "name": "Neo-BastiGHG",
+    "datei": "neo-basti.png",
+    "beschreibung": "Der Skin von BastiGHG auf lila."
+  },
+  {
+    "id": "neo-farex",
+    "name": "Neo-Farex",
+    "datei": "neo-farex.png",
+    "beschreibung": "Der Skin von Farex auf schwarz."
   }
 ]
