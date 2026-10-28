@@ -2,5 +2,10 @@
   { "id": "neo-owner", "name": "Neo-Owner", "datei": "neo-owner.png", "beschreibung": "Das Owner-Cape, nur für den Besitzer.", "nurBesitzer": true },
   { "id": "neo-blitz", "name": "Neo-Blitz", "datei": "neo-blitz.png", "beschreibung": "Der Blitz vom Neo Client." },
   { "id": "neo-nacht", "name": "Neo-Nacht", "datei": "neo-nacht.png", "beschreibung": "Sternenhimmel bei Nacht." },
-  { "id": "neo-gold", "name": "Neo-Gold", "datei": "neo-gold.png", "beschreibung": "Gold mit glänzender Raute." }
+  { "id": "neo-gold", "name": "Neo-Gold", "datei": "neo-gold.png", "beschreibung": "Gold mit glänzender Raute." },
+  { "id": "neo-pizza", "name": "Neo-Pizza", "datei": "neo-pizza.png", "beschreibung": "Ein Stück Pizza mit Peperoni." },
+  { "id": "neo-herz", "name": "Neo-Herz", "datei": "neo-herz.png", "beschreibung": "Ein rotes Herz auf Rosa." },
+  { "id": "neo-flamme", "name": "Neo-Flamme", "datei": "neo-flamme.png", "beschreibung": "Eine Flamme in der Nacht." },
+  { "id": "neo-regenbogen", "name": "Neo-Regenbogen", "datei": "neo-regenbogen.png", "beschreibung": "Alle Farben des Regenbogens." },
+  { "id": "neo-kaffee", "name": "Neo-Kaffee", "datei": "neo-kaffee.png", "beschreibung": "Eine Tasse Kaffee für lange Sessions." }
 ]
