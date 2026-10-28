@@ -1,0 +1,39 @@
+[
+  {
+    "id": "neo-owner",
+    "name": "Neo-Owner",
+    "datei": "neo-owner.png",
+    "beschreibung": "Das Owner-Cape, nur für den Besitzer.",
+    "nurBesitzer": true
+  },
+  {
+    "id": "neo-flamme",
+    "name": "Neo-Flamme",
+    "datei": "neo-flamme.png",
+    "beschreibung": "Eine Flamme in der Nacht."
+  },
+  {
+    "id": "neo-wolke",
+    "name": "Neo-Wolke",
+    "datei": "neo-wolke.png",
+    "beschreibung": "Die Gewitterwolke des Neo Clients."
+  },
+  {
+    "id": "neo-gras",
+    "name": "Neo-Grasblock",
+    "datei": "neo-gras.png",
+    "beschreibung": "Ein ganz einfacher Grasblock."
+  },
+  {
+    "id": "neo-basti",
+    "name": "Neo-BastiGHG",
+    "datei": "neo-bastighg.png",
+    "beschreibung": "GHG mir nicht auf die Eier."
+  },
+  {
+    "id": "neo-farex",
+    "name": "Neo-Farex",
+    "datei": "neo-farex.png",
+    "beschreibung": "Der Skin von Farex auf schwarz."
+  }
+]
