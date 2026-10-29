@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Hypixel",
+    "adresse": "mc.hypixel.net",
+    "beschreibung": "Der größte Server der Welt: Bed Wars, Sky Wars, SkyBlock und viele Minispiele."
+  },
+  {
+    "name": "GommeHD",
+    "adresse": "gommehd.net",
+    "beschreibung": "Beliebter deutscher Server mit vielen Minispielen."
+  },
+  {
+    "name": "CubeCraft",
+    "adresse": "play.cubecraft.net",
+    "beschreibung": "Minispiele wie EggWars und SkyWars."
+  },
+  {
+    "name": "Wynncraft",
+    "adresse": "play.wynncraft.com",
+    "beschreibung": "Ein riesiges Rollenspiel-Abenteuer mit Quests und Klassen."
+  },
+  {
+    "name": "MCC Island",
+    "adresse": "play.mccisland.net",
+    "beschreibung": "Minispiel-Insel mit bekannten Turnieren und vielen Spielen."
+  },
+  {
+    "name": "Donut SMP",
+    "adresse": "donutsmp.net",
+    "beschreibung": "Beliebter Survival-Server mit eigener Wirtschaft."
+  },
+  {
+    "name": "Hugo SMP",
+    "adresse": "hugosmp.net",
+    "beschreibung": "Großer deutscher Survival-Server mit Events."
+  },
+  {
+    "name": "Complex Gaming",
+    "adresse": "mc-complex.com",
+    "beschreibung": "Riesiges Netzwerk mit vielen Spielmodi."
+  },
+  {
+    "name": "ManaCube",
+    "adresse": "play.manacube.com",
+    "beschreibung": "Survival, Skyblock, Prison und mehr."
+  },
+  {
+    "name": "Jartex Network",
+    "adresse": "play.jartexnetwork.com",
+    "beschreibung": "Netzwerk mit PvP-, Survival- und Minispiel-Modi."
+  },
+  {
+    "name": "Minemen Club",
+    "adresse": "minemen.club",
+    "beschreibung": "PvP-Server für Duelle und Ranglisten."
+  },
+  {
+    "name": "EarthMC",
+    "adresse": "play.earthmc.net",
+    "beschreibung": "Die Erde als riesige Karte mit Städten und Nationen."
+  },
+  {
+    "name": "MinecraftOnline",
+    "adresse": "minecraftonline.com",
+    "beschreibung": "Einer der ältesten Survival-Server."
+  },
+  {
+    "name": "Cytooxien",
+    "adresse": "cytooxien.de",
+    "beschreibung": "Deutscher Server mit Minispielen und Citybuild."
+  },
+  {
+    "name": "GrieferGames",
+    "adresse": "griefergames.net",
+    "beschreibung": "Deutscher Citybuild-Server mit Wirtschaft."
+  },
+  {
+    "name": "Timolia",
+    "adresse": "timolia.de",
+    "beschreibung": "Deutscher Server mit Minispielen und Rangsystem."
+  },
+  {
+    "name": "RewinSide",
+    "adresse": "rewinside.tv",
+    "beschreibung": "Deutscher Server mit Citybuild und Minispielen."
+  },
+  {
+    "name": "PikaNetwork",
+    "adresse": "play.pika-network.net",
+    "beschreibung": "Netzwerk mit Bed Wars, Skyblock und Practice."
+  },
+  {
+    "name": "OPBlocks",
+    "adresse": "hub.opblocks.com",
+    "beschreibung": "OP-Prison, Skyblock und Survival."
+  },
+  {
+    "name": "LemonCloud",
+    "adresse": "one.lemoncloud.net",
+    "beschreibung": "Beliebtes Netzwerk mit Prison und Skyblock."
+  },
+  {
+    "name": "EnchantedMC",
+    "adresse": "ms.enchantedmc.net",
+    "beschreibung": "Survival und Minispiele mit verzauberten Extras."
+  },
+  {
+    "name": "Rinaorc",
+    "adresse": "play.rinaorc.com",
+    "beschreibung": "Französisches Netzwerk mit vielen Minispielen."
+  },
+  {
+    "name": "Epicube",
+    "adresse": "play.epicube.fr",
+    "beschreibung": "Französischer Server mit Minispielen und Survival."
+  },
+  {
+    "name": "2b2t",
+    "adresse": "2b2t.org",
+    "beschreibung": "Der berühmte Anarchie-Server ohne Regeln."
+  },
+  {
+    "name": "9b9t",
+    "adresse": "9b9t.com",
+    "beschreibung": "Anarchie-Server mit eigener Community."
+  },
+  {
+    "name": "Constantiam",
+    "adresse": "constantiam.net",
+    "beschreibung": "Anarchie-Server, auf dem alles erlaubt ist."
+  },
+  {
+    "name": "Oldfag",
+    "adresse": "oldfag.org",
+    "beschreibung": "Anarchie-Server in der Welt von 2010."
+  },
+  {
+    "name": "Herobrine.org",
+    "adresse": "herobrine.org",
+    "beschreibung": "Langjähriger Anarchie-Server mit Geschichte."
+  },
+  {
+    "name": "PokeRivals",
+    "adresse": "play.pokerivals.com",
+    "beschreibung": "Pixelmon-Server zum Fangen und Kämpfen."
+  },
+  {
+    "name": "PvPLand",
+    "adresse": "play.pvpland.net",
+    "beschreibung": "PvP- und Practice-Server."
+  },
+  {
+    "name": "Minewind",
+    "adresse": "play.minewind.com",
+    "beschreibung": "Survival-Server mit eigener Wirtschaft."
+  },
+  {
+    "name": "Mineplex",
+    "adresse": "us.mineplex.com",
+    "beschreibung": "Der klassische Minispiel-Server."
+  },
+  {
+    "name": "The Archon",
+    "adresse": "play.thearchon.net",
+    "beschreibung": "Survival mit Wirtschaft, Jobs und Städten."
+  },
+  {
+    "name": "Purple Prison",
+    "adresse": "purpleprison.net",
+    "beschreibung": "Prison-Server mit Minen und Rängen."
+  },
+  {
+    "name": "Hylex",
+    "adresse": "hylex.net",
+    "beschreibung": "Netzwerk mit Bed Wars und Minispielen."
+  },
+  {
+    "name": "ArchMC",
+    "adresse": "arch.mc",
+    "beschreibung": "Netzwerk mit vielen Spielmodi."
+  },
+  {
+    "name": "Skyblock Network",
+    "adresse": "play.skyblocknetwork.com",
+    "beschreibung": "Klassisches Skyblock mit Challenges."
+  },
+  {
+    "name": "Mineland",
+    "adresse": "mineland.net",
+    "beschreibung": "Netzwerk mit Minispielen, Survival und Skyblock."
+  }
+]
