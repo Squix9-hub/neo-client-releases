@@ -17,10 +17,36 @@
         radial-gradient(circle at 10% 100%, rgba(108, 92, 231, 0.16) 0%, transparent 40%),
         var(--dunkel);
     }
-    main { max-width: 860px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
+    main { max-width: 1120px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+    @media (min-width: 960px) {
+      .hero { grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
+      .heroText { text-align: left; }
+      .logo { margin-left: -6px; }
+    }
+    .inhaltBreit { max-width: 860px; margin-left: auto; margin-right: auto; }
+
+    /* Bilder-Slider */
+    .slider { position: relative; border-radius: 16px; overflow: hidden; background: #0c0c14;
+      border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), 0 0 60px rgba(108, 92, 231, 0.25);
+      touch-action: pan-y; user-select: none; }
+    .sliderBahn { display: flex; transition: transform 0.45s ease; }
+    .sliderBahn img { flex: 0 0 100%; width: 100%; height: auto; min-width: 0; aspect-ratio: 1900 / 990; object-fit: cover; display: block; cursor: pointer; -webkit-user-drag: none; }
+    .sliderTitel { position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 18px 14px; text-align: left; font-size: 15px; font-weight: 600;
+      background: linear-gradient(transparent, rgba(8, 8, 14, 0.88)); pointer-events: none; }
+    .pfeil { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(12, 12, 20, 0.7); color: white; font-size: 22px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .pfeil:hover { background: var(--lila); }
+    .pfeil.links { left: 10px; }
+    .pfeil.rechts { right: 10px; }
+    .punkte { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+    .punkt { width: 9px; height: 9px; padding: 0; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.22); cursor: pointer; }
+    .punkt.aktiv { background: var(--lila); width: 26px; border-radius: 5px; }
+    @media (prefers-reduced-motion: reduce) { .sliderBahn { transition: none; } }
+
     .logo { width: 170px; height: 136px; filter: drop-shadow(0 10px 30px rgba(108, 92, 231, 0.6)); }
     h1 { margin: 12px 0 6px; font-size: 48px; letter-spacing: 0.5px; }
-    .untertitel { color: #a9a9c6; font-size: 19px; margin: 0 0 32px; }
+    .untertitel { color: #a9a9c6; font-size: 19px; margin: 0 0 32px; line-height: 1.45; }
     .knopf {
       display: inline-block;
       padding: 18px 54px;
@@ -66,6 +92,8 @@
 </head>
 <body>
   <main>
+    <section class="hero">
+    <div class="heroText">
     <svg class="logo" viewBox="0 0 200 160" aria-label="Neo Client Logo">
       <path d="M55 110 a35 35 0 0 1 5 -69 a45 45 0 0 1 85 10 a30 30 0 0 1 -5 59 z" fill="#6c5ce7"/>
       <polygon points="108,95 85,130 100,130 92,155 125,115 110,115 120,95" fill="#ffd93d"/>
@@ -75,15 +103,37 @@
 
     <a class="knopf" id="download" href="https://github.com/Squix9-hub/neo-client-releases/releases/latest">Für Windows herunterladen</a>
     <div class="version" id="version"></div>
+    </div>
+
+    <div class="sliderBlock">
+      <div class="slider" id="slider" aria-roledescription="Bilder-Slider">
+        <div class="sliderBahn" id="sliderBahn">
+          <img src="spielen.jpg" alt="Startseite des Neo Clients mit Skin-Figur und Statistik" data-titel="Startseite" width="1400" height="729">
+          <img src="editor.jpg" alt="Skin-Editor mit 3D-Figur" data-titel="Skin-Editor: direkt auf der 3D-Figur malen" loading="lazy" width="1400" height="729">
+          <img src="capes.jpg" alt="Neo-Capes" data-titel="Neo-Capes" loading="lazy" width="1400" height="729">
+          <img src="laden.jpg" alt="Laden mit tägl. Glücksrad" data-titel="Laden und tägliches Glücksrad" loading="lazy" width="1400" height="729">
+          <img src="inhalte.jpg" alt="Mods, Ressourcenpakete und Shader" data-titel="Mods, Ressourcenpakete und Shader" loading="lazy" width="1400" height="729">
+          <img src="profil.jpg" alt="Profil-Karte zum Teilen" data-titel="Profil-Karte zum Teilen" loading="lazy" width="1400" height="729">
+          <img src="server.jpg" alt="Serverliste mit empfohlenen Servern" data-titel="Server und Empfehlungen" loading="lazy" width="1400" height="729">
+        </div>
+        <div class="sliderTitel" id="sliderTitel"></div>
+        <button class="pfeil links" id="zurueck" aria-label="Voriges Bild">&#8249;</button>
+        <button class="pfeil rechts" id="weiter" aria-label="Nächstes Bild">&#8250;</button>
+      </div>
+      <div class="punkte" id="punkte"></div>
+    </div>
+    </section>
+
+    <div class="inhaltBreit">
 
     <h2>Was der Launcher kann</h2>
     <div class="raster">
       <div class="karte"><strong>Fabric und Mods</strong><span>Mods direkt von Modrinth suchen, installieren, aktualisieren und ein- oder ausschalten.</span></div>
       <div class="karte"><strong>Alle Versionen</strong><span>Minecraft in jeder Version, das passende Java holt sich der Launcher selbst.</span></div>
-      <div class="karte"><strong>Skin in 3D</strong><span>Dein Skin als drehbare Figur, mit einem Klick änderbar.</span></div>
+      <div class="karte"><strong>Skin-Editor</strong><span>Dein Skin als drehbare 3D-Figur. Direkt darauf malen und mit einem Klick anziehen.</span></div>
       <div class="karte"><strong>Server beitreten</strong><span>Server speichern, Spielerzahl sehen und direkt beitreten.</span></div>
-      <div class="karte"><strong>Ressourcenpakete</strong><span>Pakete von Modrinth oder aus eigenen Dateien hinzufügen.</span></div>
-      <div class="karte"><strong>Dein Aussehen</strong><span>Farben, Hintergrundbild und Größe frei einstellbar.</span></div>
+      <div class="karte"><strong>Inhalte</strong><span>Mods, Ressourcenpakete und Shader an einem Ort, direkt von Modrinth.</span></div>
+      <div class="karte"><strong>Capes und Laden</strong><span>Neo-Capes, Themes und Titel. Dazu jeden Tag ein Glücksrad mit Neo-Münzen.</span></div>
       <div class="karte"><strong>Screenshots</strong><span>Alle Bilder aus dem Spiel an einem Ort, zum Kopieren und Aufräumen.</span></div>
       <div class="karte"><strong>Automatische Updates</strong><span>Neue Versionen installieren sich mit einem Klick.</span></div>
     </div>
@@ -105,9 +155,73 @@
       Neo Client ist ein privates Projekt und steht in keiner Verbindung zu Mojang oder Microsoft.
       <br><a href="https://github.com/Squix9-hub/neo-client-releases/releases">Alle Versionen ansehen</a>
     </footer>
+    </div>
   </main>
 
   <script>
+    // Bilder-Slider
+    (function () {
+      const bahn = document.getElementById('sliderBahn');
+      const bilder = Array.from(bahn.querySelectorAll('img'));
+      const punkte = document.getElementById('punkte');
+      const titel = document.getElementById('sliderTitel');
+      const slider = document.getElementById('slider');
+      let nr = 0;
+      let timer = null;
+
+      bilder.forEach((b, i) => {
+        const p = document.createElement('button');
+        p.className = 'punkt';
+        p.setAttribute('aria-label', 'Bild ' + (i + 1));
+        p.addEventListener('click', () => { gehe(i); neustart(); });
+        punkte.appendChild(p);
+      });
+
+      function gehe(i) {
+        nr = (i + bilder.length) % bilder.length;
+        bahn.style.transform = 'translateX(' + (-100 * nr) + '%)';
+        titel.textContent = bilder[nr].dataset.titel || '';
+        Array.from(punkte.children).forEach((p, k) => p.classList.toggle('aktiv', k === nr));
+      }
+      function neustart() {
+        clearInterval(timer);
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        timer = setInterval(() => gehe(nr + 1), 5500);
+      }
+
+      document.getElementById('weiter').addEventListener('click', () => { gehe(nr + 1); neustart(); });
+      document.getElementById('zurueck').addEventListener('click', () => { gehe(nr - 1); neustart(); });
+      slider.addEventListener('mouseenter', () => clearInterval(timer));
+      slider.addEventListener('mouseleave', neustart);
+
+      // Wischen und Klick auf das Bild
+      let startX = null;
+      let bewegt = false;
+      slider.addEventListener('pointerdown', (e) => { startX = e.clientX; bewegt = false; });
+      slider.addEventListener('pointerup', (e) => {
+        if (startX === null) return;
+        const diff = e.clientX - startX;
+        startX = null;
+        if (Math.abs(diff) > 40) {
+          gehe(nr + (diff < 0 ? 1 : -1));
+          bewegt = true;
+          neustart();
+        }
+      });
+      bahn.addEventListener('click', () => {
+        if (bewegt) { bewegt = false; return; }
+        gehe(nr + 1);
+        neustart();
+      });
+      slider.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { gehe(nr + 1); neustart(); }
+        if (e.key === 'ArrowLeft') { gehe(nr - 1); neustart(); }
+      });
+
+      gehe(0);
+      neustart();
+    })();
+
     // Holt die neueste Version von GitHub und setzt den Download-Link
     fetch('https://api.github.com/repos/Squix9-hub/neo-client-releases/releases/latest')
       .then((antwort) => antwort.json())
