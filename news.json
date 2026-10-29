@@ -1,19 +1,7 @@
 [
   {
-    "datum": "28.10.2026",
-    "titel": "Neu: Capes, Emotes mit B und eine schönere Startseite",
-    "text": "Das ist neu im Neo Client:\n\n• Neo-Capes: Im neuen Reiter Capes gibst du dir ein Cape, das nur im Launcher sichtbar ist. Dein Mojang-Cape bleibt unverändert. Neue Capes kommen laufend dazu.\n• Emotes mit B: Drücke auf der Spielen-Seite die Taste B und wähle ein Emote. Neu ist das Emote God, bei dem du schwebst.\n• Emote-Vorschau im Laden: Jedes Emote zeigt jetzt deine eigene Figur in Bewegung, bevor du es kaufst.\n• Neue Startseite: Links siehst du deine Statistik mit Spielzeit, Neo-Münzen und Version, rechts die neuesten Neuigkeiten.\n• Bessere Mod-Suche: Bei jedem Treffer siehst du Downloads und Follower. Du kannst die Treffer nach Beliebtheit sortieren.\n\nSo bekommst du das Update: Einstellungen, Nach Updates suchen, Jetzt neu starten."
-  },
-  {
-    "datum": "28.10.2026",
-    "titel": "Große Neuerungen im Neo Client",
-    "text": "Der Neo Client ist stark gewachsen. Das ist neu:\n\n• Shader: Mit Iris und fertigen Shader-Paketen sieht Minecraft deutlich schöner aus.\n• Mod-Sammlungen: Performance, Komfort und Schöne Optik mit einem Klick installieren.\n• Mods teilen: Erstelle einen Code für deine Mods und schick ihn einem Freund. Er bekommt dieselben Mods.\n• Laden und Neo-Münzen: Für jede gespielte Minute gibt es eine Münze. Damit kaufst du Themes, Rahmen, Titel und Emotes.\n• Emotes: Deine Figur winkt, jubelt, tanzt und mehr. Das gibt es nur im Launcher.\n• Skin von Spielernamen: Skins anderer Spieler ansehen, speichern oder gleich anziehen.\n• Einrichtungsassistent und PC-Check: Empfehlungen für Arbeitsspeicher und Mods passend zu deinem Computer.\n• Absturzhilfe und Problem-Bericht: Nach einem Absturz erklärt der Launcher die Ursache und hilft bei der Fehlersuche.\n• Themes: Sechs fertige Looks in den Einstellungen.\n\nSo bekommst du das Update: Einstellungen, Nach Updates suchen, Jetzt neu starten."
-  }
-]
-  {
     "datum": "29.10.2026",
     "titel": "Neu: Reiter Inhalte",
-    "text": "Mods, Ressourcenpakete und Shader sind jetzt in einem Reiter. Außerdem erscheinen Updates und Neuigkeiten als kleine Fenster unten rechts.",
-    "linkText": "",
-    "link": ""
-  },
+    "text": "Mods, Ressourcenpakete und Shader sind jetzt in einem Reiter. Außerdem erscheinen Updates und Neuigkeiten als kleine Fenster unten rechts."
+  }
+]
