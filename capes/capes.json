@@ -29,5 +29,12 @@
     "name": "Neo-Farex",
     "datei": "neo-farex.png",
     "beschreibung": "Der Skin von Farex auf schwarz."
+  },
+  {
+    "id": "neo-manager",
+    "name": "Neo-Manager",
+    "datei": "neo-manager.png",
+    "beschreibung": "Das Manager-Cape mit dem großen C.",
+    "nurManager": true
   }
 ]
